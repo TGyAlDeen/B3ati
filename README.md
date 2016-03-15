@@ -1,4 +1,4 @@
-# B3ati is SQL injection error based scanner
+# B3ati is WebApp crawler & SQL injection error based scanner
 This application is mainly for beginners and students in the field of information security software developement, this application was my BSc graduate project.
 I hope this application could be start for a better projects.
 # Programming tools:
@@ -7,4 +7,12 @@ I hope this application could be start for a better projects.
   3. Jsoup
   4. mysql 
   
+
+#####Contact:
+-------
++ author: TGy Aldeen
++ email : tgy-aldeen@semicolon-ict.com 
+
+
+
 Slam alykom
