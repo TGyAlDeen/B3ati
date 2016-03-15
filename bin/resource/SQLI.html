@@ -1,0 +1,44 @@
+<p>NRU Scanner identified a probable SQL injection, which occurs when data input by a user is interpreted as an SQL command rather than as normal data by the backend database.</p>
+<p> This is an extremely common vulnerability and its successful exploitation can have critical implications.</p>
+<p>Even though NRU Scanner believes there is a SQL injection in here, it <strong>could not confirm</strong> it. There can be numerous reasons for NRU Scanner not being able to confirm this. We strongly recommend investigating the issue manually to ensure it is an SQL injection and that it needs to be addressed. You can also consider sending the details of this issue to us so we can address this issue for the next time and give you a more precise result.</p>
+<h2>Impact</h2>
+<div>Depending on the backend database, database connection settings and the operating system, an attacker can mount one or more of the following type of attacks successfully:
+    <ul>
+        <li>Reading, updating and deleting arbitrary data/tables from the database.</li>
+        <li>Executing commands on the underlying operating system.</li>
+    </ul>
+</div>
+
+<h2>Actions to Take</h2>
+<div>
+    <ol>
+        <li>See the remedy for solution.</li>
+        <li>If you are not using a database access layer (DAL) within the architecture consider its benefits and implement if appropriate. As a minimum the use of s DAL will help centralize the issue and its resolution. You can also use ORM (<em>object relational mapping</em>). Most ORM systems use parameterized queries and this can solve many if not all SQL injection based problems.</li>
+        <li>Locate all of the dynamically generated SQL queries and convert them to parameterized queries. (<em>If you decide to use a DAL/ORM, change all legacy code to use these new libraries.</em>)</li>
+        <li>Monitor and review weblogs and application logs to uncover active or previous exploitation attempts.</li>
+    </ol>	
+</div>
+
+<h2>Remedy</h2>
+<div>
+    A very robust method for mitigating the threat of SQL injection-based vulnerabilities is to use parameterized queries (<em>prepared statements</em>). Almost all modern languages provide built-in libraries for this. Wherever possible, do not create dynamic SQL queries or SQL queries with string concatenation.
+</div>
+
+<h2>Required Skills for Successful Exploitation</h2>
+<div>
+    There are numerous freely available tools to test for SQL injection vulnerabilities. This is a complex area with many dependencies; however, it should be noted that the numerous resources available in this area have raised both attacker awareness of the issues and their ability to discover and leverage them. SQL injection is one of the most common web application vulnerabilities.
+</div>
+
+<h2>External References</h2>
+<ul>
+    <li><a href="http://www.owasp.org/index.php/SQL_injection">OWASP SQL injection</a></li>
+    <li><a href="http://ferruh.mavituna.com/sql-injection-cheatsheet-oku/">SQL injection Cheat Sheet</a></li>
+</ul>
+
+<h2>Remedy References</h2>
+<ul>
+    <li><a href="http://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet">SQL injection Prevention Cheat Sheet</a></li>
+    <li><a href="http://msdn.microsoft.com/en-us/library/ms998271.aspx">MSDN - Protect From SQL injection in ASP.NET</a></li>
+    <li><a href="http://www.owasp.org/index.php/Preventing_SQL_Injection_in_Java">OWASP Preventing SQL injection in Java</a></li>
+    <li><a href="http://www.php.net/manual/en/pdo.prepared-statements.php">Prepared Statements and Stored Procedures in PHP</a></li>
+</ul>

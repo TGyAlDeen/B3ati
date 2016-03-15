@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.web.*?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="500.0" maxWidth="1000.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="309.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PageDetailController">
+   <content>
+      <TabPane prefHeight="303.0" prefWidth="695.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab text="HTML">
+               <content>
+                  <TextArea fx:id="pageHtml" prefHeight="274.0" prefWidth="695.0" />
+               </content>
+            </Tab>
+          <Tab text="Page Request">
+               <content>
+                  <TextArea fx:id="pageRequest" prefHeight="274.0" prefWidth="695.0" />
+               </content>
+          </Tab>
+          <Tab text="Page Response">
+               <content>
+                  <TextArea fx:id="pageResponse" prefHeight="274.0" prefWidth="695.0" />
+               </content>
+          </Tab>
+            <Tab text="Web View">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <WebView fx:id="webView" prefHeight="274.0" prefWidth="695.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </content>
+</ScrollPane>

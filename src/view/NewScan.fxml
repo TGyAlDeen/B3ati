@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="191.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DL_NewScan">
+   <children>
+      <DialogPane fx:id="NewScanDialog" expanded="true" headerText="اختبار اختراق تطبيقات الويب" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="480.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <header>
+            <AnchorPane fx:id="DL_header" minHeight="0.0" minWidth="0.0" prefHeight="88.0" prefWidth="480.0">
+               <children>
+                  <ImageView fitHeight="139.0" fitWidth="142.0" layoutX="325.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resource/statistics.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+          </header>
+          <content>
+            <AnchorPane fx:id="AP_Middle" minHeight="0.0" minWidth="0.0" prefHeight="185.0" prefWidth="480.0">
+               <children>
+                  <Button fx:id="bt_StartScan" defaultButton="true" layoutX="62.0" layoutY="145.0" mnemonicParsing="false" onAction="#handleOK" prefHeight="25.0" prefWidth="93.0" text="Start Scan" textAlignment="RIGHT" textFill="#2a03ee">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="TOP_LEFT" layoutX="39.0" layoutY="25.0" minWidth="-Infinity" prefHeight="17.0" prefWidth="139.0" text="Enter Target URL" textOverrun="CLIP">
+                     <effect>
+                        <DropShadow color="#b2adad" />
+                     </effect>
+                     <font>
+                        <Font name="Tahoma Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="bt_Cancel" cancelButton="true" layoutX="240.0" layoutY="147.0" mnemonicParsing="false" onAction="#CancelDL" prefHeight="25.0" prefWidth="86.0" text="Cancel" />
+                  <TextField fx:id="txt_URL" alignment="TOP_LEFT" layoutX="39.0" layoutY="64.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="344.0" promptText="enter App EG: http://Example.com" />
+               </children>
+            </AnchorPane>
+          </content>
+          <expandableContent>
+            <AnchorPane fx:id="DL_footer" minHeight="0.0" minWidth="0.0" prefHeight="50.0" prefWidth="480.0" />
+          </expandableContent>
+      </DialogPane>
+   </children>
+</AnchorPane>

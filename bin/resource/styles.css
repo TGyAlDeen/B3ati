@@ -1,0 +1,391 @@
+  body { margin: 0pt;
+    padding: 0pt;
+    color: Black;
+    background-color: rgb(134, 134, 134);
+    font-size: 10px;
+    background-image: url(bg_main.gif);
+    background-repeat: repeat-x;
+    text-align: center;
+    }
+
+  a { color: rgb(204, 204, 204);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    }
+
+  p { margin: 0pt 0pt 10px;
+    padding: 0pt;
+    }
+
+  a:hover { color: rgb(30, 159, 226);
+    font-weight: bold;
+    text-decoration: none;
+    }
+
+  form { margin: 0pt;
+    }
+
+  #HEADER { padding: 0pt;
+    width: 750px;
+    height: 83px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 83px;
+    }
+
+  #HEADER h1 { margin: 38px 0pt 0pt;
+    padding: 0pt 9px;
+    float: left;
+    font-size: 19pt;
+    height: 45px;
+    line-height: 45px;
+    background-image: url(bg_logo.gif);
+    background-repeat: no-repeat;
+    }
+
+  #HEADER h1 a { margin: 0pt;
+    padding: 0pt;
+    text-decoration: none;
+    color: White;
+    font-family: Tahoma,Arial,Helvetica,sans-serif;
+    font-size: 18pt;
+    }
+
+  #HEADER a:hover { text-decoration: none;
+    }
+
+  #HEADER p { margin: 59px 0pt 0pt;
+    padding: 0pt;
+    float: right;
+    font-size: 12pt;
+    color: White;
+    font-family: "Times New Roman",Times,serif;
+    line-height: 12pt;
+    }
+
+  #NAVIGATION { width: 750px;
+    height: 31px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(46, 107, 169);
+    background-image: url(bg_topnav2.gif);
+    }
+
+  #TABS { border-right: 1px solid rgb(102, 102, 102);
+    margin-right: 167px;
+    height: 31px;
+    background-image: url(bg_topnav.gif);
+    background-repeat: repeat-x;
+    text-align: center;
+    line-height: 31px;
+    }
+
+  #TABS ul { margin: 0pt;
+    padding-left: 0pt;
+    display: inline;
+    list-style-type: none;
+    list-style-image: none;
+    list-style-position: outside;
+    }
+
+  #TABS li { margin: 0pt;
+    padding: 0px 36px;
+    float: left;
+    list-style-type: none;
+    list-style-image: none;
+    list-style-position: outside;
+    display: inline;
+    background-image: url(bg_navbutton.gif);
+    background-repeat: no-repeat;
+    background-position: right center;
+    }
+
+  #TABS .Last { background-image: none;
+    }
+
+  #TABS a { color: Black;
+    text-decoration: none;
+    font-family: Tahoma,Arial,Sans-Serif;
+    font-size: 11px;
+    }
+
+  #TABS a:hover { border-bottom: 2px solid rgb(29, 118, 203);
+    text-decoration: none;
+    }
+
+  #BUTTONS { float: right;
+    width: 167px;
+    height: 28px;
+    text-align: center;
+    display: block;
+    }
+
+  #VISUAL { width: 750px;
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+    height: 122px;
+    background-image: url(bg_visual.jpg);
+    background-repeat: no-repeat;
+    background-color: rgb(65, 186, 255);
+    }
+
+  #VISUAL ul { margin: 0pt;
+    padding-left: 0pt;
+    float: right;
+    width: 302px;
+    }
+
+  #VISUAL ul li { display: block;
+    list-style-type: none;
+    list-style-image: none;
+    list-style-position: outside;
+    }
+
+  #VISUAL ul li.PhraseOne { padding-right: 15px;
+    color: White;
+    font-family: "MS Sans Serif",Geneva,sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    margin-top: 18px;
+    font-weight: bold;
+    }
+
+  #VISUAL ul li.PhraseTwo { padding-right: 15px;
+    color: White;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: bold;
+    }
+
+  #VISUAL li.Button { width: 130px;
+    height: 29px;
+    float: right;
+    padding-right: 15px;
+    }
+
+  #VISUAL a { color: rgb(72, 238, 73);
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: underline;
+    }
+
+  #VISUAL a:hover { color: White;
+    }
+
+  #CONTENT { width: 750px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: White;
+    }
+
+  #LEFTBOX { padding: 5px 0pt 20px;
+    float: left;
+    width: 180px;
+    margin-left: 0pt;
+    background-color: rgb(244, 244, 244);
+    left: 15px;
+    position: relative;
+    background-image: url(leftbar_footer.gif);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    }
+
+  #LEFTBOX div { margin-left: 12px;
+    margin-right: 12px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    background-image: url(bg_hdot.gif);
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    }
+
+  #LEFTBOX div.Last { background-image: none;
+    }
+
+  #LEFTBOX h1 { margin: 0pt 0pt 9px 12px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(78, 78, 78);
+    text-align: center;
+    letter-spacing: 1px;
+    }
+
+  #LEFTBOX p { font-family: "MS Sans Serif",Geneva,sans-serif;
+    font-size: 11px;
+    line-height: 18px;
+    text-align: left;
+    }
+
+  #LEFTBOX p .Date { font-weight: bold;
+    color: rgb(193, 0, 0);
+    font-size: 9px;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    }
+
+  #LEFTBOX a { font-size: 11px;
+    color: rgb(38, 101, 165);
+    text-decoration: none;
+    }
+
+  #LEFTBOX a:hover { text-decoration: underline;
+    }
+
+  #LEFTBOX input { margin: 0pt;
+    padding: 0pt;
+    font-size: 12px;
+    }
+
+  #LEFTBOX input.Search { border: 1px solid rgb(102, 102, 102);
+    width: 153px;
+    height: 18px;
+    }
+
+  #LEFTBOX .Browse { border: 1px solid rgb(102, 102, 102);
+    width: 125px;
+    height: 18px;
+    margin-right: 7px;
+    }
+
+  #LEFTBOX ul { border: medium none ;
+    margin: 0pt 0pt 15px;
+    text-align: center;
+    padding-left: 1px;
+    display: block;
+    }
+
+  #LEFTBOX ul li { margin-left: 0pt;
+    padding-left: 0pt;
+    font-size: 11px;
+    font-family: Tahoma,Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    list-style-type: none;
+    list-style-image: url(point_left.gif);
+    list-style-position: inside;
+    line-height: 18px;
+    }
+
+  #LEFTBOX ul a { color: rgb(26, 95, 168);
+    text-decoration: none;
+    font-size: 11px;
+    padding-right: 0pt;
+    margin-right: 0pt;
+    font-family: "MS Sans Serif",Geneva,sans-serif;
+    }
+
+  #LEFTBOX ul a:hover { text-decoration: underline;
+    }
+
+  #TEXT { display: block;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    text-align: right;
+    }
+
+  #TEXT li { font-size: 14px;
+    list-style-image: url(point_left.gif);
+    }
+
+  #TEXT h1 { border: 1px dotted rgb(51, 51, 51);
+    color: rgb(0, 102, 255);
+    font-size: 18px;
+    font-weight: bold;
+    background-image: url(bg_topnav.gif);
+    font-family: Tahoma,"Times New Roman";
+    }
+
+  #TEXT hr { border-style: dashed none none;
+    border-top: thin dashed rgb(204, 204, 204);
+    }
+
+  #TEXT h2 { font-size: 18px;
+    font-weight: normal;
+    color: rgb(95, 95, 95);
+    }
+
+  #TEXT p { font-size: 18px;
+    margin-top: -10px;
+    color: rgb(243, 132, 121);
+    }
+
+  #TEXT h3 { color: rgb(185, 0, 0);
+    font-size: 12px;
+    font-family: Tahoma,"Times New Roman";
+    font-weight: bold;
+    line-height: 18px;
+    padding-bottom: 30px;
+    margin-top: -15px;
+    }
+
+  #FOOTER { width: 750px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(bg_footer.gif);
+    background-repeat: no-repeat;
+    padding-top: 9px;
+    }
+
+  #LINKS { margin-right: 250px;
+    height: 38px;
+    text-align: left;
+    color: white;
+    padding-left: 5px;
+    }
+
+  #LINKS ul { margin: 0pt;
+    padding-left: 0pt;
+    display: inline;
+    list-style-type: none;
+    list-style-image: none;
+    list-style-position: outside;
+    }
+
+  #LINKS li { border-right: 1px solid White;
+    margin: 0pt;
+    padding: 0px 11px;
+    float: left;
+    list-style-type: none;
+    list-style-image: none;
+    list-style-position: outside;
+    display: inline;
+    }
+
+  #LINKS li.Last { border-right: medium none;
+    }
+
+  #LINKS a { font-size: 11px;
+    color: white;
+    text-decoration: none;
+    }
+
+  #LINKS a:hover { text-decoration: underline;
+    }
+
+  #COPYRIGHT { float: left;
+    width: 300px;
+    height: 38px;
+    text-align: right;
+    display: block;
+    color: White;
+    font-size: 11px;
+    padding-right: 20px;
+    padding-top: 3px;
+    }
+
+  #COPYRIGHT a { color: White;
+    text-decoration: none;
+    font-weight: normal;
+    }
+
+  #COPYRIGHT a:hover { text-decoration: underline;
+    }
+

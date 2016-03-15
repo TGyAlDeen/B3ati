@@ -1,0 +1,58 @@
+<p>{PRODUCT} detected cross-site scripting, which allows an attacker to execute a dynamic script (<em>JavaScript, VBScript</em>) in the context of the application.</p>
+<p>This allows several different attack opportunities, mostly hijacking the current session of the user or changing the look of the page by changing the HTML on the fly to steal the user's credentials. This happens because the input entered by a user has been interpreted as HTML/JavaScript/VBScript by the browser. Cross-site scripting targets the users of the application instead of the server. Although this is a limitation, since it allows attackers to hijack other users' sessions, an attacker might attack an administrator to gain full control over the application.</p>
+<h2>Impact</h2>
+<div>There are many different attacks that can be leveraged through the use of cross-site scripting, including:
+    <ul>
+        <li>Hijacking user's active session.</li>
+        <li>Mounting phishing attacks.</li>
+        <li>Intercepting data and performing man-in-the-middle attacks.</li>
+    </ul>
+</div>
+
+<h2>Remedy</h2>
+<div>
+    The issue occurs because the browser interprets the input as active HTML, JavaScript or VBScript. To avoid this, output should be encoded according to the output location and context. For example, if the output goes in to a JavaScript block within the HTML document, then output needs to be encoded accordingly. Encoding can get very complex, therefore it's strongly recommended to use an encoding library such as <a href="https://www.owasp.org/index.php/Category:OWASP_Enterprise_Security_API">OWASP ESAPI</a> and <a href="http://www.microsoft.com/en-us/download/details.aspx?id=28589">Microsoft Anti-cross-site scripting</a>.
+</div>
+
+<h2>Remedy References</h2>
+<ul>
+    <li><a href="http://www.microsoft.com/en-us/download/details.aspx?id=28589">Microsoft Anti-XSS Library</a></li>
+    <li><a href="http://www.owasp.org/index.php/XSS_%28Cross_Site_Scripting%29_Prevention_Cheat_Sheet">OWASP XSS Prevention Cheat Sheet</a></li>
+    <li><a href="http://www.owasp.org/index.php/AntiSamy">OWASP AntiSamy Java</a></li>
+</ul>
+
+<h2>External References</h2>
+<ul>
+    <li><a href="http://ha.ckers.org/xss.html">XSS Cheat Sheet</a></li>
+    <li><a href="http://www.owasp.org/index.php/Cross_site_scripting" >OWASP - cross-site scripting</a></li>
+    <li><a href="https://labs.portcullis.co.uk/tools/xss-shell/">XSS Shell</a></li>
+    <li><a href="https://labs.portcullis.co.uk/tools/xss-tunnel/">XSS Tunnelling</a></li>
+</ul>
+
+<h2>Proof of Concept Notes</h2>
+<div>
+    <p>Generated XSS exploit might not work due to browser XSS filtering. Please follow the guidelines below in order to disable XSS filtering for different browsers. Also note that;</p>
+    <ul>
+        <li>XSS filtering is a feature that's enabled by default in some of the modern browsers. It should only be disabled temporarily to test exploits and should be reverted back if the browser is actively used other than testing purposes.</li>
+        <li>Even though browsers have certain checks to prevent Cross-site scripting attacks in practice there are a variety of ways to bypass this mechanism therefore a web application should not rely on this kind of client-side browser checks.</li>
+    </ul>
+    <p>Chrome</p>
+    <ul>
+        <li>Open command prompt.</li>
+        <li>Go to folder where chrome.exe is located.</li>
+        <li>Run the command <code>chrome.exe --args --disable-xss-auditor</code></li>
+    </ul>
+    <p>Internet Explorer</p>
+    <ul>
+        <li>Click Tools->Internet Options and then navigate to the Security Tab.</li>
+        <li>Click Custom level and scroll towards the bottom where you will find that Enable XSS filter is currently Enabled.</li>
+        <li>Set it to disabled. Click OK.</li>
+        <li>Click Yes to accept the warning followed by Apply.</li>
+    </ul>
+    <p>Firefox</p>
+    <ul>
+        <li>Go to <code>about:config</code> in the URL address bar.</li>
+        <li>In the search field, type <em>urlbar.filter</em> and find <em>browser.urlbar.filter.javascript</em>.</li>
+        <li>Set its value to <code>false</code> by double clicking the row.</li>
+    </ul>
+</div>

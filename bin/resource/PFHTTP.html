@@ -1,0 +1,20 @@
+{PRODUCT} detected that a critical form is served over HTTP.
+<h2>Impact</h2>
+<div>
+    <p>If an attacker can carry out a man-in-the-middle attack, he/she may be able to intercept traffic by injecting JavaScript code into this page or changing action of the HTTP code to steal the user's password. Even though the target page is HTTPS, this does not protect the system against man-in-the-middle attacks.</p>
+	<p>Basic authentication sends username and password in plain text. Generally, using basic authentication is not a good solution.</p>
+    <p>This issue is important, as it negates the use of SSL as a privacy protection barrier.</p>
+</div>
+
+<h2>Actions to Take</h2>
+<div>
+    <ol>
+        <li>See the remedy for solution.</li>
+        <li>Move all of your critical forms to HTTPS and do not allow these pages to be served over HTTP.</li>
+    </ol>
+</div>
+
+<h2>Remedy</h2>
+<div>
+    All sensitive data should be transferred over HTTPS rather than HTTP. Forms should be served over HTTPS. All aspects of the application that accept user input, starting from the login process, should only be served over HTTPS.
+</div>
